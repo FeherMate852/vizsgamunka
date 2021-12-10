@@ -1,0 +1,535 @@
+body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;;
+    background-color: rgb(30, 30, 30);
+    padding: 1% 2% 1% 2%;
+    height: 40px;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+#logo:hover{
+    cursor: pointer;
+    animation: rezges 0.5s;
+}
+
+#elso{
+    margin-left: 10px;
+}
+
+header nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header li{
+    list-style-type: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav a:hover{
+    font-size: 1.3em;
+    transition: 0.3s ease;
+    color: white;
+    padding: 4px;
+    box-shadow: 3px 6px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    
+}
+
+
+section{
+    background-color: rgb(33,37,46);
+}
+
+#sor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#tartalom{
+    color: rgb(243,242,243);
+    background-color: rgb(33,37,46);
+    margin: 3em 0 3em 0;
+    height: 550px;
+    width: 300px;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    
+}
+
+#tartalom img{
+    width: 100%;
+    height: 33%;
+    transition: all 0.4s ease-in-out;
+}
+
+#tartalom p{
+    padding: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#tartalom h2{
+    text-align: center;
+    text-shadow: 2px 2px rgba(255,255,255,0.2);
+}
+#tartalom hr{
+    width: 200px;
+}
+
+#tartalom img:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    
+}
+
+#hattersav{
+    background-image: url(kepek/hattersav.jpg);
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    min-height: 300px;
+    width: 100%;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 1em 1em 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+footer a:hover{
+    color: gray;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+#kozep{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 40px;
+}
+
+#bal{
+    border-right: 1px solid white;
+    width: 40%;
+}
+
+#jobb{
+    width: 40%;
+}
+
+#kiemelt{
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 1px;
+    
+}
+
+button{
+    float: left;
+    margin-right: 10px;
+}
+
+#valaszUzenet{
+    width: 300px;
+    height: 21px;
+}
+
+footer textarea{
+    background-color: rgb(33,37,46);
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.galeriaTartalom {
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+}
+
+.galeriaTartalom img{
+    opacity: 80%;
+}
+
+.galeriaTartalom:hover img{
+    opacity: 100%;
+}
+
+.galeriaElemek{
+    background-color: black;
+}
+
+.elozo, .kovetkezo {
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.kovetkezo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.elozo:hover, .kovetkezo:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.felirat {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top:1%;
+    padding-bottom:1%;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.szamlalo {
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#felGomb {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    opacity: 80%;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#hangok{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+
+#oszlop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px rgba(256, 256, 256, 0.2);
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.ball{
+    background-color: #111;
+    position: absolute;
+    top:2px;
+    left: 2px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+  /*Animáció*/
+
+  @keyframes rezges {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*reszponzivitás*/
+
+@media only screen and (max-width: 1300px) {
+    .galeriaTartalom {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #tartalom{
+        margin: 3em 25px 3em 25px;
+    }
+    #sor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer textarea{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #kozep a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer textarea{
+        width: 200px;
+    }
+    #valaszUzenet{
+        width: 200px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #felGomb {
+        bottom: 50px;
+        right: 5px;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #tartalom{
+        height: 650px;
+        width: 400px;
+    }
+    #tartalom h2{
+        font-size: 32px;
+    }
+    #tartalom p{
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 605px) {
+    #hangok{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #kiemelt{
+        font-size: 24px;
+    }
+    #kozep a{
+        font-size: 16px;
+    }
+    footer textarea{
+        width: 100px;
+    }
+    .felirat {
+        font-size: 18px;
+    }
+    .elozo, .kovetkezo {
+        font-size: 14px;   
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    header img{
+        width: 84px;
+        height: 28px;
+    }
+    header nav a{
+        font-size: 14px;
+    }
+    header li{
+        list-style-type: none;
+        padding: 4px;
+    }
+    .label{
+        height: 20px;
+        width: 44px;
+    }
+    .ball{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    #tartalom p{
+        font-size: 18px;
+    }
+    #kiemelt{
+        font-size: 20px;
+    }
+    #kozep a{
+        font-size: 10px;
+    }
+    #valaszUzenet{
+        width: 130px;
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #felGomb{
+        bottom: 50px;
+        right: 2px;
+        font-size: 12px;
+        padding: 4px;
+    }
+    
+}
+
+@media only screen and (max-width: 355px) {
+    header nav a{
+        font-size: 12px;
+    }
+    header nav a:hover{
+        font-size: 14px;
+    }
+    .label{
+        height: 16px;
+        width: 36px;
+    }
+    .ball{
+        height: 12px;
+        width: 12px;
+    }
+    .checkbox:checked + .label .ball{
+        transform: translateX(20px);
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+    #tartalom p{
+        font-size: 16px;
+    }
+    #oszlop h2{
+        font-size: 18px;
+    }
+    audio{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #tartalom{
+        height: 700px;
+    }
+    header nav a{
+        font-size: 10px;
+    }
+    header nav a:hover{
+        font-size: 12px;
+    }
+    .label{
+        height: 10px;
+        width: 26px;
+    }
+    .ball{
+        height: 6px;
+        width: 6px;
+    }
+    .checkbox:checked + .label .ball{
+        transform: translateX(16px);
+    }
+}
